@@ -6,37 +6,41 @@
     <title>Pet_Adoption</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="Style.css">
-    
+    <style>
+     *{
+       margin:0;
+       padding:0;
+       box-sizing:border-box;
+
+
+     }
+    </style>
 </head>
-<body>
-<header>
-<div class="bg-pink-950 flex flex-row justify-between px-2">
+<body class="h-screen w-screen">
+<header id="logo">
+<div class="bg-pink-950 flex flex-row justify-between px-2 min-h-full">
   <img  class="w-20 h-20 m mt-4 ml-2 mb-2 mr-6 px-2 py-2 rounded-full"  src="./images/logo.png" alt="logofile">
-  <nav class="">
+  <nav class="align-text">
     <ul class="text-white flex space-x-2 ">
-      <li>Home</li>
-      <li>Adopt</li>
-      <li>Volunteer</li>
-      <li>About Us</li>
+      <li a href="#" class="hover:underline">Home</li>
+      <li a href="#" class="hover:underline">Adopt</li>
+      <li a href="#" class="hover:underline">Volunteer</li>
+      <li a href="#" class="hover:underline">About Us</li>
     </ul>
   </nav>
 </div>
 </header>
-<!-- <div class="">
-  <div class="h-50 w-auto px-16 bg-cover bg-no-repeat" style="background-image: url('../images/dog-hand-shake.jpg');">
-    Your header content here -->
-</div> 
-  <div class="h-30 w-auto bg-cover bg-no-repeat bg-center w-full h-screen" style="background-image: url('./images/dog-hand-shake.jpg');">
-     Your content here 
-  <!-- </div> 
-</div>
-  
-  <main>
- <section>Anjali: Aboutus</section>
+
+  <section class=" flex relative p-2 mx-auto bg-cover object-contain bg-no-repeat bg-center h- sm:h-screen md:h-96 lg:h-128 xl:h-165" style="background-image: url('./images/dog-hand-shake.jpg'); background-position: center top;">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center">
+      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 text-center">Discover Your Ideal Pet Companion</h1>
+      <p class="leading-snug  flex text-lg md:text-xl text-white mb-6 text-center">Welcome to the ideal destination for finding the perfect pet match for you.</p>
+       </div>
+  </section>
 
 
- <section class= "our pets w-full mx-auto p-5 text-center bg-pink-950">
-  <h1 class="text-xl mb-4 font-bold text-white ">Check out our animals</h1>
+  <section class= "our pets w-full mx-auto p-5 text-center bg-pink-950">
+  <h1 class="flex text-xl mb-4 font-bold text-white ">Check out our animals</h1>
   <div class="flex flex-row justify-center space-x-4">
     <figure >
       <a href="#dogs">
@@ -67,10 +71,10 @@
   </div>
   
  </section>
- <section id="dogs">Dean: 4 divisions</section>
+ <section id="dogs">Dean: 4 divisions</section> 
  <section id="cats">Dean: 4 divisions</section>
  <section id="birds">Dean: 4 divisions</section>
- <section id="reptiles">Dean: 4 divisions</section>
+ <section id="reptiles">Dean: 4 divisions</section> -->
  <section>Dean: Individual animals section 1</section>
  <section>Dean: Individual animals section 2</section>
  <section>Dean: Individual animals section 3</section>
