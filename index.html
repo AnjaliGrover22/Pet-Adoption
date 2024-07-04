@@ -14,6 +14,7 @@
 
 
      }
+
     </style>
 </head>
 <body>
@@ -22,10 +23,10 @@
   <img  class="w-28 h-28 m mt-4 ml-2 mb-2 mr-6 px-2 py-2 rounded-full"  src="./images/logo.png" alt="logofile">
   <nav>
     <ul class="text-white flex space-x-4 px-10">
-      <li a href="#" class="hover:underline">Home</li>
-      <li a href="#" class="hover:underline">Adopt</li>
-      <li a href="#" class="hover:underline">Volunteer</li>
-      <li a href="#" class="hover:underline">About Us</li>
+      <li><a href="#" class="hover:underline cursor-pointer">Home</a></li>
+      <li><a href="#" class="hover:underline cursor-pointer">Our Pets</a></li>
+      <li><a href="#adoptform" class="hover:underline cursor-pointer">Inquiry Form</a></li>
+      <li><a href="#mycontact" class="hover:underline cursor-pointer">Contact Us</a></li>
     </ul>
   </nav>
 </div>
@@ -66,8 +67,6 @@
       <figcaption class="text-white">reptiles</figcaption>
     </a>
     </figure>
-
-
   </div>
  
  </section>
@@ -239,8 +238,34 @@
  <section>Dean: Individual animals section 1</section>
  <section>Dean: Individual animals section 1</section>
  <section>Dean: Individual animals section 1</section>
- <section>Anjali's: adoption form</section>
+  <section class="h-96 w-full text-center text-white py-4 border-solid bg-pink-950" >
+  <h2 id="adoptform" class="font-bold py-1 pb-4">Join Our Family: Pet Adoption Application</h2>
+  <form class="flex flex-col items-center min-h-screen py-4">
+    <label for="fname">Your Full Name:</label>
+  <input class="p-2 border border-gray-300 rounded" type="text" id="fname" >
+  <label for="email">Email Address:</label>
+  <input class="p-2 border border-gray-300 rounded"  type="email" id="email">
+  <label for="animal">Who are you interested in:</label>
+  <input class="p-2 border border-gray-300 rounded"  type="text" id="animal">
+  <label for="msg">Your Message:</label>
+  <textarea class="p-2 border border-gray-300 rounded"  id="msg" cols="24"></textarea>
+
+ </form>
+   </section>
  </main>
- <footer>Anjali:Footer</footer>   
+ <footer  class="h-full mx-auto py-5 text-center bg-blue-200"> 
+  <div class="flex flex-col justify-center items-center">
+  <h2 id="mycontact"  class="text-black-500 font-bold py-1 pb-4">Our Contact</h2>
+   <p class="text-black-500">PetMatch Germany</p>
+   <p>Elsterstraße 5</p>
+   <p>10453 Leipzig</p>
+   <p>Email:inquiry@petmatch.com</p>
+   <p>Tel: 098765453</p>
+  </div>
+  <div class="mt-8 border-t border-gray-700 py-4 text-center bg-pink-950 text-white">
+    <p class="text-sm">&copy; 2024 Pet Adoption. All rights reserved.</p>
+    <p class="text-sm"><a href="#" class="hover:underline">Privacy Policy</a> | <a href="#" class="hover:underline">Terms of Service</a></p>
+</div>
+ </footer>   
 </body>
 </html>
