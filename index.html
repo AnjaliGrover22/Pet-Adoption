@@ -17,21 +17,18 @@
       }
 
      }
-    </style>
-
-  </head>
- 
-
+  </style>
+ </head>
   <body class="bg-pink-950">
 <header id="logo">
 <div class="h-32 bg-pink-950 flex flex-row justify-between px-2 min-h-full items-center">
   <img  class="w-28 h-28 m mt-4 ml-2 mb-2 mr-6 px-2 py-2 rounded-full"  src="./images/logo.png" alt="logofile">
   <nav>
     <ul class="text-white flex space-x-4 px-10">
-      <li a href="#" class="hover:underline">Home</li>
-      <li a href="#" class="hover:underline">Adopt</li>
-      <li a href="#" class="hover:underline">Volunteer</li>
-      <li a href="#" class="hover:underline">About Us</li>
+      <li><a href="#" class="hover:underline cursor-pointer">Home</a></li>
+      <li><a href="#" class="hover:underline cursor-pointer">Our Pets</a></li>
+      <li><a href="#adoptform" class="hover:underline cursor-pointer">Inquiry Form</a></li>
+      <li><a href="#mycontact" class="hover:underline cursor-pointer">Contact Us</a></li>
     </ul>
   </nav>
 </div>
@@ -44,8 +41,67 @@
        </div>
   </section>
 
-   
+  <section class= "our pets w-full mx-auto p-5 text-center bg-pink-950">
+  <h1 class="flex text-xl mb-4 font-bold text-white text-center ">Check out our animals</h1>
+  <div class="flex flex-row justify-center space-x-4">
+    <figure >
+      <a href="#dogs">
+      <img  src="images/dog-icon.png" alt="icon of a dog" class="w-32 h-32 rounded-lg object-cover border border-black bg-blue-200">
+      <figcaption class="text-white">Dogs</figcaption>
+    </a>
+    </figure>
+    <figure>
+      <a href="#cats">
+      <img src="images/cat-icon.png" alt="icon of a cat" class="w- 32 h-32 rounded-lg object-cover border border-black bg-blue-200">
+      <figcaption class="text-white">Cats</figcaption>
+    </a>
+    </figure>
+    <figure>
+      <a href="#birds">
+      <img src="images/bird-icon-new.png" alt="icon of a bird" class="w-32 h-32 rounded-lg object-cover border border-black bg-blue-200 transform -scale-x-100">
+      <figcaption class="text-white">Birds</figcaption>
+    </a>
+    </figure>
+    <figure>
+      <a href="#reptiles">
+      <img src="images/animals-amphibian-chameleon-pets-reptile-512.webp" alt="icon of a reptile" class="w-32 h-32 rounded-lg object-cover border border-black bg-blue-200">
+      <figcaption class="text-white">reptiles</figcaption>
+    </a>
+    </figure>
+  </div>
+ 
+ </section>
+ <!-- Dogs Section -->
 
+ <section id="dogs" class="our-dogs  w-full mx-auto p-5 text-center bg-blue-200 border border-black">
+  <h1 class="text-xl mb-4 font-bold text-white ">Our Dogs</h1>
+  <div class="flex flex-row justify-between space-x-4">
+    <figure >
+      <a href="#bella">
+      <img  src="images/bella-24_1273_2-1024x788.webp" alt="image of bella" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
+      <figcaption class="text-white">Bella</figcaption>
+    </a>
+    </figure>
+    <figure>
+      <a href="#Simba">
+      <img src="images/simba_-24-1295_1.webp" alt="icon of a cat" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
+      <figcaption class="text-white">Simba</figcaption>
+    </a>
+    </figure>
+    <figure>
+      <a href="#paul">
+      <img src="images/paul1_18-2573-685x1024.jpg" alt="icon of a bird" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transform -scale-x-100">
+      <figcaption class="text-white">Paul</figcaption>
+    </a>
+    </figure>
+    <figure>
+      <a href="#Ludwig">
+      <img src="images/ludwig_23-1870_3-819x1024 (3).jpg" alt="icon of a reptile" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
+      <figcaption class="text-white">Ludwig</figcaption>
+    </a>
+    </figure>
+  </div>
+ </section>
       <!--  Our Pets Section-->
       <section id="ourpets"
         class="our pets w-full mx-auto p-2 text-center bg-pink-950 flex-auto"
@@ -149,6 +205,7 @@
       </section>
 
       <!--  Cats Section  -->
+
 
       <section
         id="cats"
@@ -322,10 +379,6 @@
 </div>
 </div>
 </section>
-
-
-
-
       <!-- Bella Section  -->
      
       <section id="bella" class=" p-5 bg-blue-200 border-8 solid border-pink-950 rounded-2xl flex flex-col">
@@ -513,13 +566,6 @@
   </button>
   </div>
  </section>
-
- 
- </main>
- <footer>Anjali:Footer</footer>   
-</body>
-
-
  <!-- Jacko Section  -->
      
  <section id="maya" class=" p-5 bg-blue-200 border-8 solid border-pink-950 rounded-2xl flex flex-col">
@@ -577,10 +623,33 @@
   </button>
   </div>
  </section>
-
-
-    
-    </main>
-    <footer></footer>
+<section class="h-96 w-full text-center text-white py-4 border-solid bg-pink-950" >
+  <h2 id="adoptform" class="font-bold py-1 pb-4">Join Our Family: Pet Adoption Application</h2>
+  <form class="flex flex-col items-center min-h-screen py-4">
+    <label for="fname">Your Full Name:</label>
+  <input class="p-2 border border-gray-300 rounded" type="text" id="fname" >
+  <label for="email">Email Address:</label>
+  <input class="p-2 border border-gray-300 rounded"  type="email" id="email">
+  <label for="animal">Who are you interested in:</label>
+  <input class="p-2 border border-gray-300 rounded"  type="text" id="animal">
+  <label for="msg">Your Message:</label>
+  <textarea class="p-2 border border-gray-300 rounded"  id="msg" cols="24"></textarea>
+</form>
+   </section>
+</main>
+     <footer  class="h-full mx-auto py-5 text-center bg-blue-200"> 
+  <div class="flex flex-col justify-center items-center">
+  <h2 id="mycontact"  class="text-black-500 font-bold py-1 pb-4">Our Contact</h2>
+   <p class="text-black-500">PetMatch Germany</p>
+   <p>Elsterstraße 5</p>
+   <p>10453 Leipzig</p>
+   <p>Email:inquiry@petmatch.com</p>
+   <p>Tel: 098765453</p>
+  </div>
+  <div class="mt-8 border-t border-gray-700 py-4 text-center bg-pink-950 text-white">
+    <p class="text-sm">&copy; 2024 Pet Adoption. All rights reserved.</p>
+    <p class="text-sm"><a href="#" class="hover:underline">Privacy Policy</a> | <a href="#" class="hover:underline">Terms of Service</a></p>
+</div>
+ </footer>   
   </body>
 </html>
