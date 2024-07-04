@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet_Adoption</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="Style.css">
@@ -72,106 +72,224 @@
  
  </section>
  <!-- Dogs Section -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css" />
+    <style>
+      .hover\:scale-110:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body class="bg-pink-950">
+   
 
- <section id="dogs" class="our-dogs  w-full mx-auto p-5 text-center bg-blue-200 border border-black">
-  <h1 class="text-xl mb-4 font-bold text-white ">Our Dogs</h1>
-  <div class="flex flex-row justify-between space-x-4">
-    <figure >
-      <a href="#bella">
-      <img  src="images/bella-24_1273_2-1024x788.webp" alt="image of bella" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Bella</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#Simba">
-      <img src="images/simba_-24-1295_1.webp" alt="icon of a cat" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Simba</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#paul">
-      <img src="images/paul1_18-2573-685x1024.jpg" alt="icon of a bird" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transform -scale-x-100">
-      <figcaption class="text-white">Paul</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#Ludwig">
-      <img src="images/ludwig_23-1870_3-819x1024 (3).jpg" alt="icon of a reptile" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Ludwig</figcaption>
-    </a>
-    </figure>
-  </div>
- </section>
+      <!--  Our Pets Section-->
+      <section id="ourpets"
+        class="our pets w-full mx-auto p-2 text-center bg-pink-950 flex-auto"
+      >
+        <h1 class="text-xl mb-4 font-bold text-white block">
+          Check out our animals
+        </h1>
+        <div class="flex flex-row justify-center space-x-4">
+          <figure>
+            <a href="#dogs">
+              <img
+                src="images/dog-icon.png"
+                alt="icon of a dog"
+                class="min-w-3 w-32 h-32 rounded-lg border border-black bg-blue-200 hover:bg-blue-400"
+              />
+              <figcaption class="text-white">Dogs</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#cats">
+              <img
+                src="images/cat-icon.png"
+                alt="icon of a cat"
+                class="min-w-3 w-32 h-32 rounded-lg border border-black bg-blue-200 hover:bg-blue-400"
+              />
+              <figcaption class="text-white">Cats</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#birds">
+              <img
+                src="images/bird-icon-new.png"
+                alt="icon of a bird"
+                class="w-32 h-32 rounded-lg border border-black bg-blue-200 hover:bg-blue-400 transform -scale-x-100"
+              />
+              <figcaption class="text-white">Birds</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#exotic">
+              <img
+                src="images/animals-amphibian-chameleon-pets-reptile-512.webp"
+                alt="icon of a reptile"
+                class="w-32 h-32 rounded-lg border border-black bg-blue-200 hover:bg-blue-400"
+              />
+              <figcaption class="text-white">exotic Animals</figcaption>
+            </a>
+          </figure>
+        </div>
+      </section>
+      <!-- Dogs Section -->
 
-<!--  Cats Section  -->
+      <section
+        id="dogs"
+        class="our-dogs w-full mx-auto p-5 text-center bg-blue-200 border-8 silod border-pink-950 rounded-2xl"
+      >
+        <h1 class="text-xl mb-4 font-bold text-pink-950">Our Dogs</h1>
+        <div class="flex flex-row justify-between space-x-4">
+          <figure>
+            <a href="#bella">
+              <img
+                src="images/bella-24_1273_2-1024x788.webp"
+                alt="image of bella"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Bella</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#Simba">
+              <img
+                src="images/simba_-24-1295_1.webp"
+                alt="icon of a cat"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Simba</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#paul">
+              <img
+                src="images/paul1_18-2573-685x1024.jpg"
+                alt="icon of a bird"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200  transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Paul</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#Ludwig">
+              <img
+                src="images/ludwig_23-1870_3-819x1024 (3).jpg"
+                alt="icon of a reptile"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Ludwig</figcaption>
+            </a>
+          </figure>
+        </div>
+        <button class="bg-blue-400 hover:bg-blue-600 rounded-lg text-pink-950 font-bold py-2 px-2"><a href="#ourpets">Back to Our Pets</a></button>
+      </section>
 
+      <!--  Cats Section  -->
 
- <section id="cats" class="our-cats  w-full mx-auto p-5 text-center bg-blue-200 border border-black ">
-  <h1 class="text-xl mb-4 font-bold text-white ">Our Cats</h1>
-  <div class="flex flex-row justify-between space-x-4">
-    <figure >
-      <a href="#mami">
-      <img  src="images/mami_24_8_08-1024x683.webp" alt="image of bella" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Mami</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#barsik">
-      <img src="images/barsik1_22-1782-Mittel-679x1024.jpg" alt="icon of a cat" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Barsik</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#gary">
-      <img src="images/gary-poncho_24-922-1815_1-819x1024.webp" alt="icon of a bird" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transform -scale-x-100">
-      <figcaption class="text-white">Gary & Poncho</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#marie">
-      <img src="images/marie-melia_24-1335-1144_1-820x1024.webp" alt="icon of a reptile" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Marie & Melia</figcaption>
-    </a>
-    </figure>
-  </div>
- </section>
+      <section
+        id="cats"
+        class="our-cats w-full mx-auto p-5 text-center bg-blue-200 border-8 silod border-pink-950 rounded-2xl"
+      >
+        <h1 class="text-xl mb-4 font-bold text-pink-950">Our Cats</h1>
+        <div class="flex flex-row justify-between space-x-4">
+          <figure>
+            <a href="#mami">
+              <img
+                src="images/mami_24_8_08-1024x683.webp"
+                alt="image of bella"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Mami</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#barsik">
+              <img
+                src="images/barsik1_22-1782-Mittel-679x1024.jpg"
+                alt="icon of a cat"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Barsik</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#gary">
+              <img
+                src="images/gary-poncho_24-922-1815_1-819x1024.webp"
+                alt="icon of a bird"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200  transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Gary & Poncho</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#marie">
+              <img
+                src="images/marie-melia_24-1335-1144_1-820x1024.webp"
+                alt="icon of a reptile"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Marie & Melia</figcaption>
+            </a>
+          </figure>
+        </div>
+        <button class="bg-blue-400 hover:bg-blue-600 rounded-lg text-pink-950 font-bold py-2 px-2"><a href="#ourpets">Back to Our Pets</a></button>
+      </section>
 
+      <!--  Birds Section   -->
 
- <!--  Birds Section   -->
+      <section
+        id="birds"
+        class="our-cats w-full mx-auto p-5 text-center bg-blue-200 border-8 silod border-pink-950 rounded-2xl"
+      >
+        <h1 class="text-xl mb-4 font-bold text-pink-950">Our Birds</h1>
+        <div class="flex flex-row justify-between space-x-4">
+          <figure>
+            <a href="#jacko">
+              <img
+                src="images/Jacko_23-523_1-1024x768.webp"
+                alt="image of bella"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Jacko</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#frodo">
+              <img
+                src="images/Frodo-22_2177-766x1024.webp"
+                alt="icon of a cat"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Frodo</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#olli">
+              <img
+                src="images/olli1_21-2200-683x1024.jpg"
+                alt="icon of a bird"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200  transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Olli</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#lea">
+              <img
+                src="images/Lea-u-Leo-766x1024.webp"
+                alt="icon of a reptile"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Lea & Leo</figcaption>
+            </a>
+          </figure>
+        </div>
+        <button class="bg-blue-400 hover:bg-blue-600 rounded-lg text-pink-950 font-bold py-2 px-2"><a href="#ourpets">Back to Our Pets</a></button>
+      </section>
 
-
- <section id="birds" class="our-cats  w-full mx-auto p-5 text-center bg-blue-200 border border-black">
-  <h1 class="text-xl mb-4 font-bold text-white ">Our Birds</h1>
-  <div class="flex flex-row justify-between space-x-4">
-    <figure >
-      <a href="#jaco">
-      <img  src="images/Jacko_23-523_1-1024x768.webp" alt="image of bella" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Jacko</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#frodo">
-      <img src="images/Frodo-22_2177-766x1024.webp" alt="icon of a cat" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Frodo</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#olli">
-      <img src="images/olli1_21-2200-683x1024.jpg" alt="icon of a bird" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transform -scale-x-100">
-      <figcaption class="text-white">Olli</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#lea">
-      <img src="images/Lea-u-Leo-766x1024.webp" alt="icon of a reptile" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Lea & Leo</figcaption>
-    </a>
-    </figure>
-  </div>
- </section>
-
-
-<!--  Reptaile Section   -->
+      <!--  reptiles Section   -->
 
 
 <section id="birds" class="our-cats  w-full mx-auto p-5 text-center bg-blue-200 border border-black">
@@ -221,6 +339,243 @@
 </div>
 </div>
 </section>
+      <section
+        id="exotic"
+        class="our-cats w-full mx-auto p-5 text-center bg-blue-200 border-8 silod border-pink-950 rounded-2xl"
+      >
+        <h1 class="text-xl mb-4 font-bold text-pink-950">Our exotic Animals</h1>
+        <div class="flex flex-row justify-between space-x-4">
+          <figure>
+            <a href="#maya">
+              <img
+                src="images/maja-21_378_-1-1024x683.jpg"
+                alt="image of bella"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Maya</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#sheldon">
+              <img
+                src="images/T8B4890-1024x682.jpg"
+                alt="icon of a cat"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Sheldon</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#gus">
+              <img
+                src="images/turtle-1155612-1024x686.jpg"
+                alt="icon of a bird"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200  transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Gus</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#medusa">
+              <img
+                src="images/medusa2_16-1031b.jpg"
+                alt="icon of a reptile"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Medusa</figcaption>
+            </a>
+          </figure>
+        </div>
+        <button class="bg-blue-400 hover:bg-blue-600 rounded-lg text-pink-950 font-bold py-2 px-2"><a href="#ourpets">Back to Our Pets</a></button>
+      </section>
+
+      <!-- Bella Section  -->
+     
+      <section id="bella" class=" p-5 bg-blue-200 border-8 solid border-pink-950 rounded-2xl flex flex-col">
+        <figure class="flex flex-col items-center">
+          <img src="images/bella-24_1273_2-1024x788.webp" alt="image of bella" class=" max-w-64 max-h-64 object-contain rounded-lg">
+          <figcaption class="pb-5 text-pink-950">Bella</figcaption>
+        </figure>
+
+        <div class="bella images flex flex-row justify-evenly">
+        <figure>
+          <img src="images/bella-1.webp" alt="another image of bella" class="w-32 h-32 object-cover rounded-lg">
+        </figure>
+        <figure>
+          <img src="images/bella-2.webp" alt="another image of bella" class="w-32 h-32 object-cover rounded-lg" >
+        </figure>
+        <img src="images/bella-3.webp" alt="another image of bella" class="w-32 h-32 object-cover rounded-lg">
+      </div>
+      <div class="flex flex-row flex-grow">
+        <p class="float-left w-2/3 mb-4 flex-grow">Hello, I'm Bella
+        <br>
+          ... I was confiscated for animal welfare reasons - my keepers say I'm a clumsy giant baby. I want to learn the basics of dog care with you.
+          <br>
+          Would you like to know more about me?
+          <br>
+          I like...  foraging games and my favorite people.
+          <br>
+          I can do the basic commands very well  . But unfortunately I can't do much more than that - I just need your help. I'm still untrained and would be happy if you worked on that with me. We would have to test together whether I'm completely house trained and can stay alone for a few hours and practice patiently if necessary.
+            <br>
+            Unfortunately, I'm not very good  at behaving around other dogs on a leash. I really like to bully them, so I need your help here too.
+            <br>
+            I would like...  a loving home with people who have experience with the breed in a quiet environment, preferably on the outskirts of town or in the countryside. A house with a garden would of course be great. If we get along, I could also move in with an existing four-legged friend as a second dog. Children in my home should be at least ten years old. Please note that landlord permission may be required to keep me.
+          </p>
+          <aside  class="float-right w-1/3 border-l-8 p-8 border-gray">
+            <table>
+              <tbody>
+            <tr>
+              <td class="px-2">Animal species:</td>
+              <td class="px-5" >Dogs</td>
+            </tr>
+            <tr>
+              <td class="px-2">Gender:</td>
+              <td class="px-5">Female</td>
+            </tr>
+            <tr>
+              <td class="px-2">Race:</td>
+              <td class="px-5">Cane Corso Mix</td>
+            </tr>
+            <tr>
+              <td class="px-2">Size:</td>
+              <td class="px-5">Large</td>
+            </tr>
+            <tr>
+              <td class="px-2">Birth Date:</td>
+              <td class="px-5">14.02.2023</td>
+            </tr>
+          </tbody>
+          </table>
+          </aside>
+        </div>
+          <div class=" flex justify-center">
+        <button class="bg-blue-400 hover:bg-blue-600 rounded-lg text-pink-950 font-bold py-2 px-2"><a href="#dogs">Back to Our Dogs</a>
+        </button>
+        </div>
+       </section>
+
+       <!-- Mami Section  -->
+     
+      <section id="mami" class=" p-5 bg-blue-200 border-8 solid border-pink-950 rounded-2xl flex flex-col">
+        <figure class="flex flex-col items-center">
+          <img src="images/mami_24_8_08-1024x683 (1).webp" alt="image of mami" class=" max-w-64 max-h-64 object-contain rounded-lg">
+          <figcaption class="pb-5 text-pink-950">Bella</figcaption>
+        </figure>
+
+        <div class="bella images flex flex-row justify-evenly">
+        <figure>
+          <img src="images/mami_24_8_01-1024x768.webp" alt="another image of mami" class="w-32 h-32 object-cover rounded-lg">
+        </figure>
+        <figure>
+          <img src="images/mami_24_8_03-768x1024.webp" alt="another image of mami" class="w-32 h-32 object-cover rounded-lg" >
+        </figure>
+        <img src="images/mami_24_8_02-768x1024.webp" alt="another image of mami" class="w-32 h-32 object-cover rounded-lg">
+      </div>
+      <div class="flex flex-row flex-grow">
+        <p class="float-left w-2/3 mb-4 flex-grow">Hello, I'm a mami
+        <br>
+        I used to live in a coal warehouse. It wasn't a nice life. Luckily I was rescued! Now I'm in the animal shelter and I'm looking for a quiet home where I can relax.
+          <br>
+          When I first arrived here, I was very scared. I'm still easily frightened, but I let people touch me - at least when I see that they don't mean me any harm. I don't like it on my head, though. That's too much for me, so I prefer to walk away. I don't like quick movements at all. They scare me quite a bit and I hit them out of fear. But without claws, because I don't really want to hurt anyone.
+          <br>
+          I like it when people talk to me and spend time with me. When they are just there for me without wanting anything from me. Then I say "thank you" very quietly. I don't like the animal shelter. Everyone is nice to me, but I am very lonely and often sad. Because I am a little ill, I need thyroid medication. But I take it without any problems. I will be treated for this illness free of charge here in the animal shelter for the rest of my life.
+          <br>
+          I would be very happy to have a secure balcony in my new home. I need quiet people who know about cats. Children and other cats should not wait for me. Do you have a place like that for me? Then contact my animal keepers on 030 76888-121 or fill out the form below. I'll wait for you here.
+            
+          </p>
+          <aside  class="float-right w-1/3 border-l-8 p-8 border-gray">
+            <table>
+              <tbody>
+            <tr>
+              <td class="px-2">Animal species:</td>
+              <td class="px-5" >Cats</td>
+            </tr>
+            <tr>
+              <td class="px-2">Gender:</td>
+              <td class="px-5">Female</td>
+            </tr>
+            <tr>
+              <td class="px-2">Race:</td>
+              <td class="px-5">EKH</td>
+            </tr>
+            <tr>
+              <td class="px-2">Size:</td>
+              <td class="px-5">-</td>
+            </tr>
+            <tr>
+              <td class="px-2">Birth Date:</td>
+              <td class="px-5">06.2009</td>
+            </tr>
+          </tbody>
+          </table>
+          </aside>
+        </div>
+          <div class=" flex justify-center">
+        <button class="bg-blue-400 hover:bg-blue-600 rounded-lg text-pink-950 font-bold py-2 px-2"><a href="#cats">Back to Our Cats</a>
+        </button>
+        </div>
+       </section>
+
+
+ <!-- Jacko Section  -->
+     
+ <section id="jacko" class=" p-5 bg-blue-200 border-8 solid border-pink-950 rounded-2xl flex flex-col">
+  <figure class="flex flex-col items-center">
+    <img src="images/Jacko_23-523_1-1024x768.webp" alt="image of jacko" class=" max-w-64 max-h-64 object-contain rounded-lg">
+    <figcaption class="pb-5 text-pink-950">Jacko</figcaption>
+  </figure>
+
+  <div class="bella images flex flex-row justify-evenly">
+  <figure>
+    <img src="images/Jacko_23-523_2-1024x768.webp" alt="another image of jacko" class="w-32 h-32 object-cover rounded-lg">
+  </figure>
+  <figure>
+    <img src="images/Jacko_23-523_3-766x1024.webp" alt="another image of jacko" class="w-32 h-32 object-cover rounded-lg" >
+  </figure>
+  <img src="images/Jacko_23-523_4-796x1024.webp" alt="another image of jacko" class="w-32 h-32 object-cover rounded-lg">
+</div>
+<div class="flex flex-row flex-grow">
+  <p class="float-left w-2/3 mb-4 flex-grow">Hello, I'm a Jacko
+  <br>
+  Jacko came to us from a shelter. Unfortunately, we have no further information about his previous home. He currently lives in a small group of African grey parrots and is doing well there.
+    <br>
+    We would like Jacko to have an experienced home that already has a female African grey parrot or a harmonious group. He is very attentive, curious and explores everything very carefully. However, he is also quick to use his beak in various situations. He probably hasn't learned any other way. His future owners should therefore be familiar with the body language of African grey parrots in order to minimize this behavior.
+    <br>
+    Since Jacko likes to be on the move and is rarely found in one place, he needs a lot of space. The aviary should therefore offer enough space - a normal standing aviary would be too small. In the animal shelter, he currently lives in an aviary with a heated interior and an outdoor aviary, which he also likes to use when the weather is good. This type of housing would also be ideal in his new home. A room of his own that offers enough space would also be an option, but must be assessed individually.
+    
+    </p>
+    <aside  class="float-right w-1/3 border-l-8 p-8 border-gray">
+      <table>
+        <tbody>
+      <tr>
+        <td class="px-2">Animal species:</td>
+        <td class="px-5" >Birds</td>
+      </tr>
+      <tr>
+        <td class="px-2">Gender:</td>
+        <td class="px-5">Male</td>
+      </tr>
+      <tr>
+        <td class="px-2">Race:</td>
+        <td class="px-5">African Gray Parrot</td>
+      </tr>
+      <tr>
+        <td class="px-2">Size:</td>
+        <td class="px-5">-</td>
+      </tr>
+      <tr>
+        <td class="px-2">Birth Date:</td>
+        <td class="px-5">22.03.2013</td>
+      </tr>
+    </tbody>
+    </table>
+    </aside>
+  </div>
+    <div class=" flex justify-center">
+  <button class="bg-blue-400 hover:bg-blue-600 rounded-lg text-pink-950 font-bold py-2 px-2"><a href="#birds">Back to Our Birds</a>
+  </button>
+  </div>
+ </section>
 
  <!-- Article ends here -->
  <section>Dean: Individual animals section 1</section>
@@ -243,4 +598,69 @@
  </main>
  <footer>Anjali:Footer</footer>   
 </body>
+
+
+ <!-- Jacko Section  -->
+     
+ <section id="maya" class=" p-5 bg-blue-200 border-8 solid border-pink-950 rounded-2xl flex flex-col">
+  <figure class="flex flex-col items-center">
+    <img src="images/maja-21_378_-1-1024x683.jpg" alt="image of maya" class=" max-w-64 max-h-64 object-contain rounded-lg">
+    <figcaption class="pb-5 text-pink-950">Maya</figcaption>
+  </figure>
+
+  <div class="bella images flex flex-row justify-evenly">
+  <figure>
+    <img src="images/maja-21_378-2-1024x683.jpg" alt="another image of maya" class="w-32 h-32 object-cover rounded-lg">
+  </figure>
+  <figure>
+    <img src="images/maja-21_378-3-1024x683.jpg" alt="another image of maya" class="w-32 h-32 object-cover rounded-lg" >
+  </figure>
+  <img src="images/maja-21_378_-2-1024x683.jpg" alt="another image of maya" class="w-32 h-32 object-cover rounded-lg">
+</div>
+<div class="flex flex-row flex-grow">
+  <p class="float-left w-2/3 mb-4 flex-grow">Hello, I'm a Maya
+  <br>
+  Maya is a boa constrictor that is around 1.75 m long and weighs 2.7 kg. She needs a tropical terrarium that should be at least 2 m long, 2 m wide and 2 m high. Since the animals' housing is an important factor that often leads to them being given away, we are happy to provide support and advice on choosing the right housing.
+    <br>
+    Maya is a very active snake who likes to use the entire area of ​​her terrarium and also wants to make contact with the people around her. To keep her, you need proof of expertise and a landlord's permit, and depending on the state, you may also need a permit from the local nature conservation authority. Please inquire in advance, or contact us, about the relevant requirements.
+    
+    </p>
+    <aside  class="float-right w-1/3 border-l-8 p-8 border-gray">
+      <table>
+        <tbody>
+      <tr>
+        <td class="px-2">Animal species:</td>
+        <td class="px-5" >Snakes</td>
+      </tr>
+      <tr>
+        <td class="px-2">Gender:</td>
+        <td class="px-5">Female</td>
+      </tr>
+      <tr>
+        <td class="px-2">Race:</td>
+        <td class="px-5">Boa Constrictor</td>
+      </tr>
+      <tr>
+        <td class="px-2">Size:</td>
+        <td class="px-5">-</td>
+      </tr>
+      <tr>
+        <td class="px-2">Birth Date:</td>
+        <td class="px-5">Unknown</td>
+      </tr>
+    </tbody>
+    </table>
+    </aside>
+  </div>
+    <div class=" flex justify-center">
+  <button class="bg-blue-400 hover:bg-blue-600 rounded-lg text-pink-950 font-bold py-2 px-2"><a href="#exotic">Back to Our Exotic Animals</a>
+  </button>
+  </div>
+ </section>
+
+
+    
+    </main>
+    <footer></footer>
+  </body>
 </html>
