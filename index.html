@@ -1,209 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet_Adoption</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="Style.css">
-    
-</head>
-<body class="h-screen w-screen">
-  <header>Anjali: logo, navbar</header>
-  <main>
- <section>Anjali: Aboutus</section>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css" />
+    <style>
+      .hover\:scale-110:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body class="relative h-[650] bg-pink-950">
+   
 
-<!--  Our Pets Section-->
- <section class= "our pets w-full mx-auto p-5 text-center bg-pink-950 flex-auto ">
-  <h1 class="text-xl mb-4 font-bold text-white block ">Check out our animals</h1>
-  <div class="flex flex-row justify-center space-x-4">
-    <figure >
-      <a href="#dogs">
-      <img  src="images/dog-icon.png" alt="icon of a dog" class="w-32 h-32 rounded-lg object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Dogs</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#cats">
-      <img src="images/cat-icon.png" alt="icon of a cat" class="w-32 h-32 rounded-lg object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Cats</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#birds">
-      <img src="images/bird-icon-new.png" alt="icon of a bird" class="w-32 h-32 rounded-lg object-cover border border-black bg-blue-200 transform -scale-x-100">
-      <figcaption class="text-white">Birds</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#exotic">
-      <img src="images/animals-amphibian-chameleon-pets-reptile-512.webp" alt="icon of a reptile" class="w-32 h-32 rounded-lg object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">exotic Animals</figcaption>
-    </a>
-    </figure>
+      <!--  Our Pets Section-->
+      <section id="ourpets"
+        class="our pets w-full mx-auto p-2 text-center bg-pink-950 flex-auto"
+      >
+        <h1 class="text-xl mb-4 font-bold text-white block">
+          Check out our animals
+        </h1>
+        <div class="flex flex-row justify-center space-x-4">
+          <figure>
+            <a href="#dogs">
+              <img
+                src="images/dog-icon.png"
+                alt="icon of a dog"
+                class="min-w-3 w-32 h-32 rounded-lg border border-black bg-blue-200 hover:bg-blue-400"
+              />
+              <figcaption class="text-white">Dogs</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#cats">
+              <img
+                src="images/cat-icon.png"
+                alt="icon of a cat"
+                class="min-w-3 w-32 h-32 rounded-lg border border-black bg-blue-200 hover:bg-blue-400"
+              />
+              <figcaption class="text-white">Cats</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#birds">
+              <img
+                src="images/bird-icon-new.png"
+                alt="icon of a bird"
+                class="w-32 h-32 rounded-lg border border-black bg-blue-200 hover:bg-blue-400 transform -scale-x-100"
+              />
+              <figcaption class="text-white">Birds</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#exotic">
+              <img
+                src="images/animals-amphibian-chameleon-pets-reptile-512.webp"
+                alt="icon of a reptile"
+                class="w-32 h-32 rounded-lg border border-black bg-blue-200 hover:bg-blue-400"
+              />
+              <figcaption class="text-white">exotic Animals</figcaption>
+            </a>
+          </figure>
+        </div>
+      </section>
+      <!-- Dogs Section -->
 
+      <section
+        id="dogs"
+        class="our-dogs w-full mx-auto p-5 text-center bg-blue-200 border-8 silod border-pink-950 rounded-2xl"
+      >
+        <h1 class="text-xl mb-4 font-bold text-pink-950">Our Dogs</h1>
+        <div class="flex flex-row justify-between space-x-4">
+          <figure>
+            <a href="#bella">
+              <img
+                src="images/bella-24_1273_2-1024x788.webp"
+                alt="image of bella"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Bella</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#Simba">
+              <img
+                src="images/simba_-24-1295_1.webp"
+                alt="icon of a cat"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Simba</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#paul">
+              <img
+                src="images/paul1_18-2573-685x1024.jpg"
+                alt="icon of a bird"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200  transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Paul</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#Ludwig">
+              <img
+                src="images/ludwig_23-1870_3-819x1024 (3).jpg"
+                alt="icon of a reptile"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Ludwig</figcaption>
+            </a>
+          </figure>
+        </div>
+        <button class="bg-blue-400 hover:bg-blue-600 rounded-lg text-pink-950 font-bold py-2 px-2"><a href="#ourpets">Back to Our Pets</a></button>
+      </section>
 
-  </div>
- 
- </section>
- <!-- Dogs Section -->
+      <!--  Cats Section  -->
 
- <section id="dogs" class="our-dogs  w-full mx-auto p-5 text-center bg-blue-200 border-8 border-purple-400   ">
-  <h1 class="text-xl mb-4 font-bold text-white ">Our Dogs</h1>
-  <div class="flex flex-row justify-between space-x-4">
-    <figure >
-      <a href="#bella">
-      <img  src="images/bella-24_1273_2-1024x788.webp" alt="image of bella" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Bella</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#Simba">
-      <img src="images/simba_-24-1295_1.webp" alt="icon of a cat" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Simba</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#paul">
-      <img src="images/paul1_18-2573-685x1024.jpg" alt="icon of a bird" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transform -scale-x-100">
-      <figcaption class="text-white">Paul</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#Ludwig">
-      <img src="images/ludwig_23-1870_3-819x1024 (3).jpg" alt="icon of a reptile" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Ludwig</figcaption>
-    </a>
-    </figure>
-  </div>
- </section>
+      <section
+        id="cats"
+        class="our-cats w-full mx-auto p-5 text-center bg-blue-200 border-8 silod border-pink-950 rounded-2xl"
+      >
+        <h1 class="text-xl mb-4 font-bold text-pink-950">Our Cats</h1>
+        <div class="flex flex-row justify-between space-x-4">
+          <figure>
+            <a href="#mami">
+              <img
+                src="images/mami_24_8_08-1024x683.webp"
+                alt="image of bella"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Mami</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#barsik">
+              <img
+                src="images/barsik1_22-1782-Mittel-679x1024.jpg"
+                alt="icon of a cat"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Barsik</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#gary">
+              <img
+                src="images/gary-poncho_24-922-1815_1-819x1024.webp"
+                alt="icon of a bird"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200  transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Gary & Poncho</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#marie">
+              <img
+                src="images/marie-melia_24-1335-1144_1-820x1024.webp"
+                alt="icon of a reptile"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Marie & Melia</figcaption>
+            </a>
+          </figure>
+        </div>
+        <button class="bg-blue-400 hover:bg-blue-600 rounded-lg text-pink-950 font-bold py-2 px-2"><a href="#ourpets">Back to Our Pets</a></button>
+      </section>
 
-<!--  Cats Section  -->
+      <!--  Birds Section   -->
 
+      <section
+        id="birds"
+        class="our-cats w-full mx-auto p-5 text-center bg-blue-200 border-8 silod border-pink-950 rounded-2xl"
+      >
+        <h1 class="text-xl mb-4 font-bold text-pink-950">Our Birds</h1>
+        <div class="flex flex-row justify-between space-x-4">
+          <figure>
+            <a href="#jaco">
+              <img
+                src="images/Jacko_23-523_1-1024x768.webp"
+                alt="image of bella"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Jacko</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#frodo">
+              <img
+                src="images/Frodo-22_2177-766x1024.webp"
+                alt="icon of a cat"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Frodo</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#olli">
+              <img
+                src="images/olli1_21-2200-683x1024.jpg"
+                alt="icon of a bird"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200  transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Olli</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#lea">
+              <img
+                src="images/Lea-u-Leo-766x1024.webp"
+                alt="icon of a reptile"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Lea & Leo</figcaption>
+            </a>
+          </figure>
+        </div>
+        <button class="bg-blue-400 hover:bg-blue-600 rounded-lg text-pink-950 font-bold py-2 px-2"><a href="#ourpets">Back to Our Pets</a></button>
+      </section>
 
- <section id="cats" class="our-cats  w-full mx-auto p-5 text-center bg-blue-200 border-dashed border-t-1 border-purple-400 border-r-8 border-b-8 ">
-  <h1 class="text-xl mb-4 font-bold text-white ">Our Cats</h1>
-  <div class="flex flex-row justify-between space-x-4">
-    <figure >
-      <a href="#mami">
-      <img  src="images/mami_24_8_08-1024x683.webp" alt="image of bella" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Mami</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#barsik">
-      <img src="images/barsik1_22-1782-Mittel-679x1024.jpg" alt="icon of a cat" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Barsik</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#gary">
-      <img src="images/gary-poncho_24-922-1815_1-819x1024.webp" alt="icon of a bird" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transform -scale-x-100">
-      <figcaption class="text-white">Gary & Poncho</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#marie">
-      <img src="images/marie-melia_24-1335-1144_1-820x1024.webp" alt="icon of a reptile" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Marie & Melia</figcaption>
-    </a>
-    </figure>
-  </div>
- </section>
+      <!--  reptiles Section   -->
 
+      <section
+        id="exotic"
+        class="our-cats w-full mx-auto p-5 text-center bg-blue-200 border-8 silod border-pink-950 rounded-2xl"
+      >
+        <h1 class="text-xl mb-4 font-bold text-pink-950">Our exotic Animals</h1>
+        <div class="flex flex-row justify-between space-x-4">
+          <figure>
+            <a href="#maya">
+              <img
+                src="images/maja-21_378_-1-1024x683.jpg"
+                alt="image of bella"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Maya</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#sheldon">
+              <img
+                src="images/T8B4890-1024x682.jpg"
+                alt="icon of a cat"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Sheldon</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#gus">
+              <img
+                src="images/turtle-1155612-1024x686.jpg"
+                alt="icon of a bird"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200  transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Gus</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#medusa">
+              <img
+                src="images/medusa2_16-1031b.jpg"
+                alt="icon of a reptile"
+                class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+              />
+              <figcaption class="text-pink-950">Medusa</figcaption>
+            </a>
+          </figure>
+        </div>
+        <button class="bg-blue-400 hover:bg-blue-600 rounded-lg text-pink-950 font-bold py-2 px-2"><a href="#ourpets">Back to Our Pets</a></button>
+      </section>
 
- <!--  Birds Section   -->
-
-
- <section id="birds" class="our-cats  w-full mx-auto p-5 text-center bg-blue-200 border-dashed border-8 border-purple-400">
-  <h1 class="text-xl mb-4 font-bold text-white ">Our Birds</h1>
-  <div class="flex flex-row justify-between space-x-4">
-    <figure >
-      <a href="#jaco">
-      <img  src="images/Jacko_23-523_1-1024x768.webp" alt="image of bella" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Jacko</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#frodo">
-      <img src="images/Frodo-22_2177-766x1024.webp" alt="icon of a cat" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Frodo</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#olli">
-      <img src="images/olli1_21-2200-683x1024.jpg" alt="icon of a bird" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transform -scale-x-100">
-      <figcaption class="text-white">Olli</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#lea">
-      <img src="images/Lea-u-Leo-766x1024.webp" alt="icon of a reptile" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Lea & Leo</figcaption>
-    </a>
-    </figure>
-  </div>
- </section>
-
-
-<!--  reptiles Section   -->
-
-
-<section id="exotic" class="our-cats  w-full mx-auto p-5 text-center bg-blue-200 ">
-  <h1 class="text-xl mb-4 font-bold text-white ">Our exotic Animals</h1>
-  <div class="flex flex-row justify-between space-x-4">
-    <figure >
-      <a href="#maya">
-      <img  src="images/maja-21_378_-1-1024x683.jpg" alt="image of bella" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Maya</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#sheldon">
-      <img src="images/T8B4890-1024x682.jpg" alt="icon of a cat" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Sheldon</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#gus">
-      <img src="images/turtle-1155612-1024x686.jpg" alt="icon of a bird" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transform -scale-x-100">
-      <figcaption class="text-white">Gus</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#medusa">
-      <img src="images/medusa2_16-1031b.jpg" alt="icon of a reptile" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Medusa</figcaption>
-    </a>
-    </figure>
-  </div>
- </section>
-
-
-
-
- <section >Dean: 4 divisions</section>
- <section >Dean: 4 divisions</section>
- <section id="reptiles">Dean: 4 divisions</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 2</section>
- <section>Dean: Individual animals section 3</section>
- <section>Dean: Individual animals section 4</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Anjali: Services</section>
- <section>Anjali:Adoption Form</section>
- </main>
- <footer>Anjali:Footer</footer>   
-</body>
+      <section>Dean: 4 divisions</section>
+      <section>Dean: 4 divisions</section>
+      <section id="reptiles">Dean: 4 divisions</section>
+      <section>Dean: Individual animals section 1</section>
+      <section>Dean: Individual animals section 2</section>
+      <section>Dean: Individual animals section 3</section>
+      <section>Dean: Individual animals section 4</section>
+      <section>Dean: Individual animals section 1</section>
+      <section>Dean: Individual animals section 1</section>
+      <section>Dean: Individual animals section 1</section>
+      <section>Dean: Individual animals section 1</section>
+      <section>Dean: Individual animals section 1</section>
+      <section>Dean: Individual animals section 1</section>
+      <section>Dean: Individual animals section 1</section>
+      <section>Dean: Individual animals section 1</section>
+      <section>Dean: Individual animals section 1</section>
+      <section>Dean: Individual animals section 1</section>
+      <section>Dean: Individual animals section 1</section>
+      <section>Dean: Individual animals section 1</section>
+      <section>Anjali: Services</section>
+      <section>Anjali:Adoption Form</section>
+    </main>
+    <footer>Anjali:Footer</footer>
+  </body>
 </html>
