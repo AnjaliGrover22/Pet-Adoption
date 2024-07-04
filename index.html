@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet_Adoption</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css" />
     <style>
      *{
        margin:0;
        padding:0;
        box-sizing:border-box;
-
+       .hover\:scale-110:hover {
+        transform: scale(1.1);
+      }
 
      }
     </style>
-</head>
-<body>
+
+  </head>
+ 
+
+  <body class="bg-pink-950">
 <header id="logo">
 <div class="h-32 bg-pink-950 flex flex-row justify-between px-2 min-h-full items-center">
   <img  class="w-28 h-28 m mt-4 ml-2 mb-2 mr-6 px-2 py-2 rounded-full"  src="./images/logo.png" alt="logofile">
@@ -38,49 +44,6 @@
        </div>
   </section>
 
-
-  <section class= "our pets w-full mx-auto p-5 text-center bg-pink-950">
-  <h1 class="flex text-xl mb-4 font-bold text-white text-center ">Check out our animals</h1>
-  <div class="flex flex-row justify-center space-x-4">
-    <figure >
-      <a href="#dogs">
-      <img  src="images/dog-icon.png" alt="icon of a dog" class="w-32 h-32 rounded-lg object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Dogs</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#cats">
-      <img src="images/cat-icon.png" alt="icon of a cat" class="w- 32 h-32 rounded-lg object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Cats</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#birds">
-      <img src="images/bird-icon-new.png" alt="icon of a bird" class="w-32 h-32 rounded-lg object-cover border border-black bg-blue-200 transform -scale-x-100">
-      <figcaption class="text-white">Birds</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#reptiles">
-      <img src="images/animals-amphibian-chameleon-pets-reptile-512.webp" alt="icon of a reptile" class="w-32 h-32 rounded-lg object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">reptiles</figcaption>
-    </a>
-    </figure>
-
-
-  </div>
- 
- </section>
- <!-- Dogs Section -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="Style.css" />
-    <style>
-      .hover\:scale-110:hover {
-        transform: scale(1.1);
-      }
-    </style>
-  </head>
-  <body class="bg-pink-950">
    
 
       <!--  Our Pets Section-->
@@ -289,56 +252,7 @@
         <button class="bg-blue-400 hover:bg-blue-600 rounded-lg text-pink-950 font-bold py-2 px-2"><a href="#ourpets">Back to Our Pets</a></button>
       </section>
 
-      <!--  reptiles Section   -->
-
-
-<section id="birds" class="our-cats  w-full mx-auto p-5 text-center bg-blue-200 border border-black">
-  <h1 class="text-xl mb-4 font-bold text-white ">Our Birds</h1>
-  <div class="flex flex-row justify-between space-x-4">
-    <figure >
-      <a href="#jaco">
-      <img  src="images/Jacko_23-523_1-1024x768.webp" alt="image of bella" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Jacko</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#frodo">
-      <img src="images/Frodo-22_2177-766x1024.webp" alt="icon of a cat" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Frodo</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#olli">
-      <img src="images/olli1_21-2200-683x1024.jpg" alt="icon of a bird" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200 transform -scale-x-100">
-      <figcaption class="text-white">Olli</figcaption>
-    </a>
-    </figure>
-    <figure>
-      <a href="#lea">
-      <img src="images/Lea-u-Leo-766x1024.webp" alt="icon of a reptile" class="w-32 h-32 rounded-full object-cover border border-black bg-blue-200">
-      <figcaption class="text-white">Lea & Leo</figcaption>
-    </a>
-    </figure>
-  </div>
- </section>
- <!--Article starts here-->
- <section>
-  <h1 class="bg-pink-950 text-white text-center font-bold p-4">Explore Our Services</h1>
- <div class="h-48 flex flex-row justify-between bg-pink-950 flex-wrap px-8 items-center">
-<div class="h-40 border-2 bg-white text-black-500 text-center w-32 ">
-  <h2 class="font-bold pb-1">Celebrating Diversity</h2>
-  <p class="text-sm text-center leading-tight">Celebrate diversity with pets of all breeds, ages, and backgrounds waiting for their forever homes.</p>
-</div>
-<div class="h-40 border-2 bg-white text-black-500 text-center w-32">
-  <h2 class="font-bold pb-1">Expert Guidance</h2>
-  <p class="text-sm text-center leading-tight">Receive expert guidance every step of the way to ensure a seamless adoption process.</p>
-</div>
-<div class="h-40 border-2 bg-white text-black-500 text-center w-32">
-  <h2 class="font-bold pb-1">Health and Care</h2>
-  <p class="text-sm text-center leading-tight">Our pets are vet-checked and cared for, ensuring they join your home healthy and happy.</p>
-</div>
-</div>
-</section>
+      <!-- Exsotic Section -->
       <section
         id="exotic"
         class="our-cats w-full mx-auto p-5 text-center bg-blue-200 border-8 silod border-pink-950 rounded-2xl"
@@ -388,6 +302,29 @@
         </div>
         <button class="bg-blue-400 hover:bg-blue-600 rounded-lg text-pink-950 font-bold py-2 px-2"><a href="#ourpets">Back to Our Pets</a></button>
       </section>
+
+
+ <!--Article starts here-->
+ <section>
+  <h1 class="bg-pink-950 text-white text-center font-bold p-4">Explore Our Services</h1>
+ <div class="h-48 flex flex-row justify-between bg-pink-950 flex-wrap px-8 items-center">
+<div class="h-40 border-2 bg-white text-black-500 text-center w-32 ">
+  <h2 class="font-bold pb-1">Celebrating Diversity</h2>
+  <p class="text-sm text-center leading-tight">Celebrate diversity with pets of all breeds, ages, and backgrounds waiting for their forever homes.</p>
+</div>
+<div class="h-40 border-2 bg-white text-black-500 text-center w-32">
+  <h2 class="font-bold pb-1">Expert Guidance</h2>
+  <p class="text-sm text-center leading-tight">Receive expert guidance every step of the way to ensure a seamless adoption process.</p>
+</div>
+<div class="h-40 border-2 bg-white text-black-500 text-center w-32">
+  <h2 class="font-bold pb-1">Health and Care</h2>
+  <p class="text-sm text-center leading-tight">Our pets are vet-checked and cared for, ensuring they join your home healthy and happy.</p>
+</div>
+</div>
+</section>
+
+
+
 
       <!-- Bella Section  -->
      
@@ -577,24 +514,7 @@
   </div>
  </section>
 
- <!-- Article ends here -->
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 2</section>
- <section>Dean: Individual animals section 3</section>
- <section>Dean: Individual animals section 4</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Dean: Individual animals section 1</section>
- <section>Anjali's: adoption form</section>
+ 
  </main>
  <footer>Anjali:Footer</footer>   
 </body>
